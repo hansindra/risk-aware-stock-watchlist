@@ -4,6 +4,7 @@
 This project builds a risk-aware anomaly detection system for the Sri Lankan stock market to help investors identify abnormal stock behavior and market stress periods.
 
 ## Project Structure
+```
 Capstone/
 ├── notebooks/
 ├── src/
@@ -11,6 +12,8 @@ Capstone/
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
+
+```
 
 
 - notebooks/ → Analysis workflow
@@ -30,16 +33,16 @@ pip install -r requirements.txt
 
 Install dependencies using one of the following:
 
-### macOS / Linux
+#### macOS / Linux
 python3 -m pip install -r requirements.txt
-### Windows
+#### Windows
 python -m pip install -r requirements.txt
 
 1. Run data download script:
    
-## macOS / Linux
+#### macOS / Linux
 python3 src/01_download_data.py
-## Windows
+#### Windows
 python src/01_download_data.py
 
 This will create the data/ folder and download the required raw and processed datasets.
@@ -62,7 +65,7 @@ Saved in:
 
 data/processed/
 
-### Processed Files
+## Processed Files
 
 - ensemble_anomaly_evaluation.csv → Evaluation results of anomaly detection methods  
 - monthly_market_regime.csv → Monthly classification (Normal / Elevated / Crisis)  
